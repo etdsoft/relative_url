@@ -1,4 +1,4 @@
-# Rails 3 + RAILS_RELATIVE_URL_ROOT + mountable engine
+# Rails 3.2 + RAILS_RELATIVE_URL_ROOT + mountable engine
 
 This is a simple proof of concept app with:
 
