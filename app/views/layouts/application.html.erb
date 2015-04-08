@@ -8,9 +8,11 @@
 </head>
 <body>
 
-<%= link_to 'Clients', main_app.clients_path %>
-<%= link_to 'Blog', blog.root_path %>
+<%= link_to 'Clients', main_app.clients_path() %>
+<%= link_to 'Blog', blog_engine.admin_blog_engine_root_path %>
 
+<%= debug Rails.application.config.action_controller.relative_url_root %>
+<%= debug RAILS_RELATIVE_URL_ROOT: ENV['RAILS_RELATIVE_URL_ROOT'], SCRIPT_NAME: ENV['SCRIPT_NAME'] %>
 <%= yield %>
 
 </body>
